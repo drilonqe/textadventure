@@ -5,17 +5,13 @@ public class TextAdventure {
         Player player = new Player();
         Inventory inventory = player.getInventory();
         // Make rooms
-        Room outside = new OutsideRoom();
-        Room cowles = null;
-        Room hallway = new NorrisHallway(null, outside, inventory);
+         OutsideRoom outside = new OutsideRoom();
 
-        // Link back directions:
-        ((OutsideRoom) outside).setCowles(cowles);
-        ((OutsideRoom) outside).setHallway(hallway);
+        NorrisHallway hallway = new NorrisHallway(null, outside, inventory);
 
-        // Don’t forget: link bathroom into hallway separately if needed
-        Room bathroom = new Bathroom(inventory, player);
-        ((NorrisHallway) hallway).setBathroom(bathroom);
+        Bathroom bathroom = new Bathroom(inventory, player);
+        bathroom.setHallway(hallway);          
+        hallway.setBathroom(bathroom);
 
         // Start game
         Room dorm = new NorrisRoom(inventory, hallway);
