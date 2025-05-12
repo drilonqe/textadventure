@@ -5,6 +5,13 @@
 ### Game Story
 You are stressed as your finals are approaching. After you go to bed, you wake up in
 a nightmare that you had when you were a first year here. You wake up in your room in Norris and remember that in this nightmare, Grinnell is suffering from a zombie apocalypse. Navigating from Norris to Cowles, where you will save a friend that has the knowledge of the golden pCard, which is in Spencer and will allow you to get into dHall and press the button there to wake up and not die in the nightmare. Have fun!
+
+### PS
+We still need to implement more rooms like Cowles Lounge, Macfield, Spencer Grill and D hall. 
+They are done but we did not have time to build the connection between them.
+Sorry for the inconvenience.
+
+
 ### Citations:
 
 * We used Java Version 23.0.2
